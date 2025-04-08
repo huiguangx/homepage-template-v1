@@ -27,7 +27,7 @@ useHead({
 </style> -->
 <template>
   <!-- PC -->
-  <PCLayout v-if="deviceType === 'pc'"></PCLayout>
+  <PCLayout v-if="deviceType === 'PC'"></PCLayout>
   <!-- mobile -->
   <MobileLayout v-if="deviceType === 'mobile'"></MobileLayout>
 </template>
