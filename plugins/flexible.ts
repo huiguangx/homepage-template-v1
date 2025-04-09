@@ -40,6 +40,7 @@ export default defineNuxtPlugin(() => {
 
         docEl.removeChild(fakeBody)
       }
+      docEl.style.visibility = 'visible'
     })(window, document)
   }
 })
