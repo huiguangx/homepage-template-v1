@@ -7,17 +7,17 @@
 
       <!-- Right side navigation tabs -->
       <div class="flex space-x-8">
-        <a
+        <NuxtLink
           v-for="tab in tabs"
           :key="tab.name"
-          href="#"
+          :to="tab.path"
           class="relative py-2 transition-all duration-300 hover:text-white"
         >
           {{ tab.name }}
           <span
             class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
           ></span>
-        </a>
+        </NuxtLink>
 
         <div class="w-32 h-10 bg-black">
           <button v-if="locale === 'zh-cn'" @click="changeLanguage('en')">English</button>
@@ -50,5 +50,10 @@ onMounted(() => {
     setLocale(userLang)
   }
 })
-const tabs = [{ name: '首页' }, { name: '产品介绍' }, { name: '招贤纳士' }, { name: '关于我们' }]
+const tabs = [
+  { name: '首页', path: '/' },
+  { name: '产品介绍', path: '/product' },
+  { name: '招贤纳士', path: '/careers' },
+  { name: '关于我们', path: '/about' },
+]
 </script>
