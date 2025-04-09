@@ -40,7 +40,7 @@
 
 //         docEl.removeChild(fakeBody)
 //       }
-//       docEl.style.visibility = 'visible'
+//       //   docEl.style.visibility = 'visible'
 //     })(window, document)
 //   }
 // })

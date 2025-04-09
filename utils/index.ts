@@ -2,7 +2,6 @@ import { ref } from '#imports'
 /* 判断终端是 PC or mobile  参考 https://juejin.cn/post/7326268915100794906 */
 export const getDeviceType = () => {
   let UA: string
-  console.log('终端2')
   if (import.meta.client)
     // 如果是在客户端执行，则通过 navigator 获取 user-agent
     UA = navigator.userAgent // 如果是在服务端执行，则通过请求头获取 user-agent

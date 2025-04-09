@@ -57,6 +57,10 @@ export default defineNuxtConfig({
     },
   },
   vite: {
+    esbuild: {
+      drop: ['debugger'],
+      pure: process.env.NUXT_ENV === 'production' ? ['console.log'] : [], // Use NUXT_ENV to distinct between test and production
+    },
     css: {
       preprocessorOptions: {
         scss: {
