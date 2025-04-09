@@ -29,31 +29,31 @@ export default defineNuxtConfig({
   },
   postcss: {
     plugins: {
-      // 'postcss-px-to-viewport-8-plugin': {
-      //   // 配置参数使用与 postcss-px-to-viewport 一致
-      //   viewportWidth: 750, // 设计稿宽度（通常为 750px 或 375px）
-      //   unitPrecision: 5, // 转换后的精度（小数点位数）
-      //   viewportUnit: 'vw', // 转换的目标单位
-      //   selectorBlackList: [], // 不需要转换的选择器
-      //   minPixelValue: 1, // 最小转换值
-      //   mediaQuery: false, // 是否转换媒体查询中的 px
-      //   exclude: /node_modules/,
-      //   include: /\/mobile\//,
-      // },
-      'postcss-pxtorem': {
-        rootValue({ file = '' }) {
-          return file.indexOf('vant') !== -1 ? 37.5 : 75
-        },
-        propList: ['*'],
-        mediaQuery: false,
-        exclude: (file = '') => {
-          // 只对 移动端的 /mobile/、vantUi 文件夹中的文件进行 px 转 rem，其他文件不转换
-          const needRemArr = ['/mobile/', 'vant']
-          const bl = needRemArr.find((item) => file?.includes(item))
-          if (bl) return false
-          return true
-        },
+      'postcss-px-to-viewport-8-plugin': {
+        // 配置参数使用与 postcss-px-to-viewport 一致
+        viewportWidth: 750, // 设计稿宽度（通常为 750px 或 375px）
+        unitPrecision: 5, // 转换后的精度（小数点位数）
+        viewportUnit: 'vw', // 转换的目标单位
+        selectorBlackList: [], // 不需要转换的选择器
+        minPixelValue: 1, // 最小转换值
+        mediaQuery: false, // 是否转换媒体查询中的 px
+        exclude: /node_modules/,
+        include: /\/mobile\//,
       },
+      // 'postcss-pxtorem': {
+      //   rootValue({ file = '' }) {
+      //     return file.indexOf('vant') !== -1 ? 37.5 : 75
+      //   },
+      //   propList: ['*'],
+      //   mediaQuery: false,
+      //   exclude: (file = '') => {
+      //     // 只对 移动端的 /mobile/、vantUi 文件夹中的文件进行 px 转 rem，其他文件不转换
+      //     const needRemArr = ['/mobile/', 'vant']
+      //     const bl = needRemArr.find((item) => file?.includes(item))
+      //     if (bl) return false
+      //     return true
+      //   },
+      // },
     },
   },
   vite: {
