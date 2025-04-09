@@ -29,6 +29,7 @@
     "install": "^0.13.0",
     "nuxt-windicss": "^3.0.1",
     "postcss-px-to-viewport-8-plugin": "^1.2.5",
+    "postcss-pxtorem": "^6.1.0",
     "prettier": "^3.5.3",
     "sass-embedded": "^1.82.0"
   },
