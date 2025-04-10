@@ -1,142 +1,104 @@
-<p align="center">
-<a href="https://nuxt-tgame-web.vercel.app" target="_blank">vercel preview(SSR)</a> | <a href="https://xp.palxp.cn/">github page preview(SSG)</a> | <a href="https://kid-1912.github.io/nuxt-tgame-web">常见问题</a> | <a href="https://juejin.cn/spost/7453452135209156662">掘金文章(juejin)</a>
-</p>
+# Nuxt TGame Web
 
-[![](https://raw.githubusercontent.com/KID-1912/Github-PicGo-Images/master/202412290101347.png)](https://nuxt-tgame-web.vercel.app/)
+[![Nuxt Version](https://img.shields.io/badge/Nuxt-3.14.1592-green.svg)](https://nuxt.com)
+[![Vue Version](https://img.shields.io/badge/Vue-3-limegreen.svg)](https://vuejs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue.svg)](https://www.typescriptlang.org)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PNPM](https://img.shields.io/badge/pnpm-10.6.4-orange.svg)](https://pnpm.io)
 
-## development
+Modern game website built with Nuxt 3, featuring SSR/SSG support, responsive design, and internationalization.
 
+## ✨ Features
+
+- 🚀 Nuxt 3 with SSR/SSG support
+- 📱 Responsive design for mobile & PC
+- 🌐 i18n internationalization (en/zh-cn)
+- 🎨 TailwindCSS + WindiCSS styling
+- 🔄 Swiper for interactive carousels
+- 🐳 Docker & Nginx deployment ready
+- 📊 Google Analytics integration
+- 🛠️ TypeScript support
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+
+- PNPM 7+
+
+### Installation
+
+```bash
+# Clone repository
+git clone https://github.com/your-repo/homepage.git
+cd nuxt-tgame-web
+
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
 ```
-npm run dev
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🛠 Development
+
+### Environment Variables
+
+Create `.env` files based on the examples:
+
+```bash
+cp .env.example .env.development
+cp .env.example .env.production
 ```
 
-## SSR build
+### Common Commands
 
+| Command         | Description                |
+| --------------- | -------------------------- |
+| `pnpm dev`      | Start dev server           |
+| `pnpm build`    | Build for production (SSR) |
+| `pnpm generate` | Generate static site (SSG) |
+| `pnpm preview`  | Preview production build   |
+| `pnpm lint`     | Lint and fix files         |
+
+## 🏗 Project Structure
+
+```text
+nuxt-tgame-web/
+├── app/               # App configuration
+├── assets/            # Static assets
+├── components/        # Vue components
+├── composables/       # Composable functions
+├── layouts/           # Layout components
+├── middleware/        # Route middleware
+├── pages/             # Application views
+├── plugins/           # Vue plugins
+├── public/            # Public files
+├── server/            # Server configuration
+├── utils/             # Utility functions
+└── nuxt.config.ts     # Nuxt configuration
 ```
-npm run build
+
+## 🐳 Deployment
+
+### Docker
+
+```bash
+docker-compose up -d --build
 ```
 
-more detail see https://nuxt.com/docs/getting-started/deployment#nodejs-server
+### Static Hosting (SSG)
 
-## SSG generate
-
+```bash
+pnpm generate
+# Output to dist/ directory
 ```
-npm run generate
-```
 
-more detail see https://nuxt.com/docs/getting-started/prerendering
+### Node.js Server (SSR)
 
-## Relation
-
-[Nuxt.js](https://nuxt.com/)
-
-```
-nuxt-tgame-web
-├─ .prettierrc.cjs
-├─ app
-│  └─ router.options.ts
-├─ app.vue
-├─ assets
-│  ├─ images
-│  │  ├─ index
-│  │  │  ├─ firstPage
-│  │  │  │  ├─ index-s1-bg-h5.jpg
-│  │  │  │  ├─ index-s1-bg-h5.webp
-│  │  │  │  ├─ index-s1-bg.jpg
-│  │  │  │  ├─ index-s1-bg.webp
-│  │  │  │  ├─ placeholder.jpg
-│  │  │  │  ├─ placeholder.webp
-│  │  │  │  └─ slogan.webp
-│  │  │  ├─ fourPage
-│  │  │  │  ├─ bg
-│  │  │  │  │  └─ gp-bg.jpg
-│  │  │  │  └─ img
-│  │  │  │     └─ role.png
-│  │  │  ├─ secondPage
-│  │  │  │  ├─ bg
-│  │  │  │  │  ├─ pvp-bg.webp
-│  │  │  │  │  ├─ pvp-gold-bg.png
-│  │  │  │  │  └─ pvp-logo-bg.png
-│  │  │  │  └─ img
-│  │  │  │     ├─ role1.png
-│  │  │  │     ├─ role2.png
-│  │  │  │     ├─ role3.png
-│  │  │  │     ├─ role4.png
-│  │  │  │     └─ role5.png
-│  │  │  └─ thirdPage
-│  │  │     ├─ bg
-│  │  │     │  └─ lol-bg-top.webp
-│  │  │     └─ img
-│  │  │        ├─ role1.png
-│  │  │        ├─ role2.png
-│  │  │        ├─ role3.png
-│  │  │        └─ role4.png
-│  │  └─ logo
-│  │     ├─ foot-logo.webp
-│  │     ├─ logo-active.png
-│  │     └─ logo.png
-│  ├─ json
-│  │  └─ game.json
-│  ├─ media
-│  │  └─ video
-│  │     ├─ banner-h5.mp4
-│  │     ├─ banner.mp4
-│  │     ├─ first_frame.jpg
-│  │     └─ home_video.mp4
-│  └─ styles
-│     └─ global.scss
-├─ components
-├─ composables
-├─ config
-│  ├─ i18n.config.ts
-│  └─ i18n.ts
-├─ docker-compose.yml
-├─ Dockerfile
-├─ ecosystem.config.cjs
-├─ i18n
-│  └─ locales
-│     ├─ en.json
-│     └─ zh-cn.json
-├─ layouts
-│  ├─ default.vue
-│  ├─ Footer
-│  │  └─ Footer.vue
-│  └─ Header
-│     └─ Header.vue
-├─ lib
-│  └─ vue-swiper.ts
-├─ middleware
-├─ nginx.conf
-├─ nuxt.config.ts
-├─ package.json
-├─ pages
-│  ├─ home
-│  │  ├─ components
-│  │  │  └─ SwiperPages
-│  │  │     ├─ firstPage.vue
-│  │  │     ├─ fourPage.vue
-│  │  │     ├─ index.ts
-│  │  │     ├─ secondPage.vue
-│  │  │     └─ thirdPage.vue
-│  │  └─ index.vue
-│  ├─ index.vue
-│  ├─ news
-│  │  └─ index.vue
-│  └─ product
-│     └─ index.vue
-├─ pnpm-lock.yaml
-├─ public
-│  ├─ favicon.ico
-│  └─ robots.txt
-├─ README.md
-├─ scripts
-│  └─ fontSlice.ts
-├─ server
-│  └─ tsconfig.json
-├─ start.sh
-├─ tsconfig.json
-├─ types
-│  └─ index.d.ts
-└─ windicss.config.ts
-
+```bash
+pnpm build
+pnpm start
 ```

@@ -20,8 +20,8 @@
         </NuxtLink>
 
         <div class="w-32 h-10 bg-black">
-          <button v-if="locale === 'zh-cn'" @click="changeLanguage('en')">English</button>
-          <button v-else @click="changeLanguage('zh-cn')">简体中文</button>
+          <button v-if="locale === 'zh'" @click="changeLanguage('en')">English</button>
+          <button v-else @click="changeLanguage('zh')">简体中文</button>
         </div>
       </div>
     </nav>
@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-type SupportedLocale = 'en' | 'zh-cn'
+type SupportedLocale = 'en' | 'zh'
 
 const { locale, setLocale } = useI18n()
 const changeLanguage = (newLocale: SupportedLocale) => {
@@ -45,7 +45,7 @@ const changeLanguage = (newLocale: SupportedLocale) => {
 
 onMounted(() => {
   const userLang = localStorage.getItem('user-lang') as SupportedLocale | null
-  if (userLang && (userLang === 'en' || userLang === 'zh-cn')) {
+  if (userLang && (userLang === 'en' || userLang === 'zh')) {
     locale.value = userLang
     setLocale(userLang)
   }

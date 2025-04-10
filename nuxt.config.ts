@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     locales: currentLocales,
     langDir: 'locales',
     defaultLocale: 'en',
-    strategy: 'no_prefix',
+    strategy: 'prefix_except_default',
     vueI18n: path.resolve(__dirname, './config/i18n.config.ts'),
     // 启用浏览器语言检测，以便在访问者第一次访问您的站点时自动将其重定向到首选语言环境。
     detectBrowserLanguage: {
@@ -23,9 +23,10 @@ export default defineNuxtConfig({
       useCookie: true,
       // 用于存储当前语言环境的变量名
       cookieKey: 'i18n_redirected',
-      // (建议用于改进SEO) -仅检测站点根路径(/)上的浏览器区域设置。只有当使用策略而不是“no_prefix”时才有效。
+      // (建议用于改进SEO) -仅检测站点根路径(/)上的浏览器区域设置。只有当使用策略而不是"no_prefix"时才有效。
       redirectOn: 'root',
     },
+    baseUrl: 'http://baidu1.com',
   },
   postcss: {
     plugins: {

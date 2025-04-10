@@ -1,6 +1,8 @@
 <script setup>
-import Header from './Header/Header.vue'
-import Footer from './Footer/Footer.vue'
+// import Header from './Header/Header.vue'
+// import Footer from './Footer/Footer.vue'
+const i18nHead = useLocaleHead()
+useHead(() => i18nHead.value)
 </script>
 
 <template>
