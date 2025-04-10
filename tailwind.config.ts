@@ -1,5 +1,5 @@
 // tailwind.config.js
-import pxToViewport from 'tailwindcss-px-to-viewport'
+// import pxToViewport from 'tailwindcss-px-to-viewport'
 
 module.exports = {
   // darkMode: false, // or 'media' or 'class'
@@ -14,24 +14,24 @@ module.exports = {
     './PC/**/*.vue',
   ],
   theme: {
-    extend: {
-      pxToViewPort: {
-        // 基准视口配置
-        PresetScreen: {
-          width: 750, // 默认设计稿宽度（单位：px）
-          // height: 1334, // 默认设计稿高度（单位：px）
-        },
-        // 自定义扩展规则（可选）
-        utilities: {
-          // 在此添加自定义转换规则
-        },
-      },
-    },
+    // extend: {
+    //   pxToViewPort: {
+    //     // 基准视口配置
+    //     PresetScreen: {
+    //       width: 750, // 默认设计稿宽度（单位：px）
+    //       // height: 1334, // 默认设计稿高度（单位：px）
+    //     },
+    //     // 自定义扩展规则（可选）
+    //     utilities: {
+    //       // 在此添加自定义转换规则
+    //     },
+    //   },
+    // },
   },
   variants: {
     extend: {},
   },
   plugins: [
-    pxToViewport(), // 启用插件
+    // pxToViewport(), // 启用插件
   ],
 }
