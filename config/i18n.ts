@@ -1,12 +1,14 @@
 const locales = [
   {
     code: 'en',
+    iso: 'en',
     file: 'en.json',
     name: 'English',
     language: 'en-US',
   },
   {
     code: 'zh',
+    iso: 'zh',
     file: 'zh.json',
     name: '简体中文',
     language: 'zh-CN',
