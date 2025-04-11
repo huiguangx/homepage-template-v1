@@ -74,7 +74,7 @@ export default defineNuxtConfig({
     head: {
       title: '星尘智能',
       meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
       style: [],
       script: [],
       noscript: [],
