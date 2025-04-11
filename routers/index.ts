@@ -28,7 +28,19 @@ const baseRoutes: BaseRoute[] = [
     name: 'product',
     path: '/product',
     pcComponent: () => import('../PC/views/product.vue'),
-    // mobileComponent: () => import('../mobile/views/product.vue'),
+    mobileComponent: () => import('../mobile/views/product.vue'),
+  },
+  {
+    name: 'careers',
+    path: '/careers',
+    pcComponent: () => import('../PC/views/careers.vue'),
+    mobileComponent: () => import('../mobile/views/careers.vue'),
+  },
+  {
+    name: 'about',
+    path: '/about',
+    pcComponent: () => import('../PC/views/about.vue'),
+    mobileComponent: () => import('../mobile/views/about.vue'),
   },
 ]
 

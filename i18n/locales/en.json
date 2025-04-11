@@ -1,7 +1,5 @@
 {
   "welcome": "Welcome",
-  "home": "Home",
-  "about": "About",
   "contact": "Contact",
   "login": "Login",
   "logout": "Logout",
@@ -17,9 +15,162 @@
   "search": "Search",
   "settings": "Settings",
   "profile": "Profile",
-  "menu": "Menu",
   "language": "Language",
   "theme": "Theme",
   "dark": "Dark",
-  "light": "Light"
-} 
+  "light": "Light",
+  "careers": {
+    "title": "Careers",
+    "content": "Join our team and grow with us."
+  },
+  "about": {
+    "title": "About Us",
+    "content": "Learn more about our company and mission."
+  },
+
+  "menu": {
+    "home": "Home",
+    "products": "Products",
+    "careers": "Careers",
+    "about": "About"
+  },
+  "home": {
+    "hero": {
+      "title": "Leading AI Robotics Company",
+      "subtitle": "Make Intelligent Robot Your Companion",
+      "slogan": "Ad Astra Per Aspera",
+      "cta": "Learn more"
+    },
+    "preorder": {
+      "title": "Astribot S1",
+      "description": "Your AI Robotic Partner, Together Forward",
+      "status": "Pre-order Now!",
+      "hint": "Contact us"
+    },
+    "product": {
+      "title": "Astribot S1",
+      "tagline": "Naturally Yours"
+    },
+    "news": {
+      "title": "News",
+      "items": [
+        {
+          "title": "Celebrate the inaugural 'Intangible Cultural Heritage Chinese New Year' with Astribot S1",
+          "desc": "Celebrate the inaugural 'Intangible Cultural Heritage Chinese New Year' with Astribot S1, and immerse yourself in world's cultural treasures.",
+          "date": "January 27, 2025 10:00"
+        },
+        {
+          "title": "In-Depth | Astribot secures $400M from Top Investors, teams up with PI: The robot's Jarvis is Here!",
+          "desc": "Recently, Physical Intelligence and Astribot have announced a partnership to collaborate at the data and model levels, promoting the entry of general AI into the physical world and jointly building world models.",
+          "date": "November 21, 2024 18:02"
+        }
+      ]
+    },
+    "careers": {
+      "title": "Join Us",
+      "description": "Bringing intelligent, versatile robots into reality."
+    },
+    "about": {
+      "title": "About Us",
+      "content": "Astribot was founded in Shenzhen in December 2022. As a leading AI robotics company, our vision is to empower billions of people with Al robotic partners, and our mission is to promote co-existence, co-creation and co-prosperity between humans and robots.\n\nThe company has pioneered a software-hardware integrated system architecture for AI (Design for AI, DFAI), deeply coupling 'AI capabilities' with 'optimal manipulation'. This innovation has led to key breakthroughs in embodied intelligence and data acquisition, enabling robots to learn, think, and work like humans while fostering smooth and intelligent interactions with people."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "If you want to become an industry partner, please fill in the information first.",
+      "cta": "Apply Now!"
+    }
+  },
+  "product": {
+    "video": {
+      "title": "Astribot S1",
+      "subtitle": "Your AI Robotic Partner, Together Forward",
+      "cta": "Contact us"
+    },
+    "performance": {
+      "title": "Our new AI humanoid robot brings more service possibilities",
+      "description": "Our company has pioneered a software-hardware integrated system architecture for AI (Design for AI, DFAI), deeply coupling 'AI capabilities' with 'optimal manipulation'. This innovation enables S1 to learn, think, and work more like humans."
+    },
+    "specs": {
+      "title": "Human-like abilities, Greater creativity",
+      "description": "Astribot S1 mirrors an adult male's operational parameters, delivering exceptional performance, stability, and safety - empowering researchers and explorers to bring imagination to life.",
+      "comparison": {
+        "items": [
+          "Single arm DoF",
+          "Payload per arm (horizontal reach)",
+          "Maximum velocity at the effector",
+          "Maximum acceleration at the effector",
+          "Positioning repeatability",
+          "Height",
+          "Weight",
+          "Arm span",
+          "Endurance"
+        ],
+        "note": "*This version is designed for scientific research, with select parameters unlockable for enhanced performance."
+      }
+    },
+    "toolchain": {
+      "title": "Powerful Toolchain for Breakthrough Research",
+      "description": "Optimize onboard toolchains to create an open, efficient ecosystem - accelerating the development and validation of cutting-edge algorithms and models.",
+      "features": [
+        "Comprehensive API",
+        "Expert Development Guidelines",
+        "User-friendly Visual Development Interface",
+        "Support for Major Simulation Platforms",
+        "Complete AI Deployment Guidance: from Data Collection to Model Deployment",
+        "Fast and Reliable Technical Support"
+      ]
+    },
+    "teleoperation": {
+      "title": "VR Teleoperation: Let Astribot Become Your AI Training Partner",
+      "sections": [
+        {
+          "title": "Ultra-Efficient Data Collection, 5x Faster Training",
+          "points": [
+            "Real-time VR teleoperation with low latency motion synchronization",
+            "Each pick and place cycle takes only 2 seconds",
+            "High-quality data throughout, with over 99% effective data"
+          ]
+        },
+        {
+          "title": "Zero-code Astribot UI, Master in Minutes",
+          "points": ["Zero-code operation with a single click", "Complete task setup in 1 minute"]
+        }
+      ]
+    },
+    "cases": {
+      "title": "Join Hands to Co-create, Evolve Infinitely",
+      "partners": [
+        {
+          "name": "Physical Intelligence",
+          "desc": "For enterprises focusing on AI and embodied models"
+        },
+        {
+          "name": "Data collection",
+          "desc": "Efficient, comfortable, simple, and safe solution"
+        },
+        {
+          "name": "Universities",
+          "desc": "Creating convenient development environment"
+        }
+      ]
+    },
+    "ecosystem": {
+      "title": "We Sincerely Invite Partners from All Industries",
+      "vision": "Embodied intelligent robots present a world-class challenge and a once-in-a-century opportunity.",
+      "sections": [
+        {
+          "title": "Science Breakthroughs",
+          "desc": "Driving the transformative development of embodied intelligence"
+        },
+        {
+          "title": "Industry Intelligent Transformation",
+          "desc": "Exploring practical pathways for embodied AI adoption"
+        },
+        {
+          "title": "End-User Application Exploration",
+          "desc": "Focusing on universality, cost, safety for application explosion"
+        }
+      ]
+    }
+  }
+}

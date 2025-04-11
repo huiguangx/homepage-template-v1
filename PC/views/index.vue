@@ -7,7 +7,7 @@
 
       <!-- Right side navigation tabs -->
       <div class="flex space-x-8">
-        <NuxtLink
+        <APPLink
           v-for="tab in tabs"
           :key="tab.name"
           :to="tab.path"
@@ -17,8 +17,8 @@
           <span
             class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
           ></span>
-        </NuxtLink>
-
+        </APPLink>
+        <NuxtLink to="/about">aaaaaaa</NuxtLink>
         <div class="w-32 h-10 bg-black">
           <button v-if="locale === 'zh'" @click="switchLanguage('en')">English</button>
           <button v-else @click="switchLanguage('zh')">简体中文</button>
@@ -30,13 +30,24 @@
     <main class="flex-1">
       <slot />
     </main>
+    <div>
+      <a
+        href="https://mp.weixin.qq.com/s/xz_n6Udx744VzlfR6eyKdg"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link-style"
+      >
+        点击查看微信文章
+      </a>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import APPLink from '~/components/AppLink.vue'
 type SupportedLocale = 'en' | 'zh'
-
-const { locale, setLocale } = useI18n()
+const localePath = useLocalePath()
+const { t, locale, setLocale } = useI18n()
 const cookie = useCookie('i18n_redirected', {
   maxAge: 60 * 60 * 24 * 365, // 设置有效期为 1 年
 })
@@ -53,10 +64,10 @@ onMounted(() => {
     setLocale(userLang)
   }
 })
-const tabs = [
-  { name: '首页', path: '/' },
-  { name: '产品介绍', path: '/product' },
-  { name: '招贤纳士', path: '/careers' },
-  { name: '关于我们', path: '/about' },
-]
+const tabs = computed(() => [
+  { name: t('menu.home'), path: '/' },
+  { name: t('menu.products'), path: '/product' },
+  { name: t('menu.careers'), path: '/careers' },
+  { name: t('menu.about'), path: '/about' },
+])
 </script>
