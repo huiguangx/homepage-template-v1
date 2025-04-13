@@ -45,7 +45,7 @@ const baseRoutes: BaseRoute[] = [
 ]
 
 // 支持的语言前缀
-const languages: string[] = ['', '/zh'] // 空字符串表示默认语言
+const languages: string[] = ['', '/en'] // 空字符串表示默认语言
 
 // 生成多语言路由
 function generateLocalizedRoutes(baseRoutes: BaseRoute[]): {
