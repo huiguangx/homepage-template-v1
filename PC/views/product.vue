@@ -1,12 +1,13 @@
 <template>
   <div class="product-page">
-    <h1>产品介绍</h1>
-    <p>这里是产品介绍页面内容</p>
+    <h1>{{ $t('product.title') }}</h1>
+    <p>{{ $t('product.description') }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
-// 产品页逻辑
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 </script>
 
 <style scoped>

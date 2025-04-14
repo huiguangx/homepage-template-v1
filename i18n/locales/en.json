@@ -81,6 +81,8 @@
     }
   },
   "product": {
+    "title": "Products",
+    "description": "This is the product introduction page content",
     "video": {
       "title": "Astribot S1",
       "subtitle": "Your AI Robotic Partner, Together Forward",
