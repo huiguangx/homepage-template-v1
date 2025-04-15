@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   i18n: {
     locales: currentLocales,
     langDir: 'locales',
-    defaultLocale: 'en',
+    defaultLocale: 'zh',
     strategy: 'prefix_except_default',
     vueI18n: path.resolve(__dirname, './config/i18n.config.ts'),
     // 启用浏览器语言检测，以便在访问者第一次访问您的站点时自动将其重定向到首选语言环境。

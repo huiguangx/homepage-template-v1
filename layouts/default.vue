@@ -1,19 +1,17 @@
 <script setup>
-// import Header from './Header/Header.vue'
-// import Footer from './Footer/Footer.vue'
-const i18nHead = useLocaleHead()
-useHead(() => i18nHead.value)
+import Header from './Header/Header.vue'
+import Footer from './Footer/Footer.vue'
 </script>
 
 <template>
   <div>
-    <!-- <slot name="header">
+    <slot name="header">
       <Header></Header>
-    </slot> -->
+    </slot>
     <slot></slot>
-    <!-- <slot name="footer">
+    <slot name="footer">
       <Footer></Footer>
-    </slot> -->
+    </slot>
   </div>
 </template>
 
